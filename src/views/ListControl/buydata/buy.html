@@ -1,0 +1,37 @@
+<div class="contain row">
+    <div class="col-md-8"><h5>個人資料</h5></div>
+    <div class="personal-infor col-md-8 mb-5">
+      <h5>訂單資料</h5>
+      <div class="row1 col-md-12">
+        <label class="col-md-12" for="name" >姓名:{{buyuser.name}}</label>
+      </div>
+      <div class="row1 col-md-12">
+        <label class="col-md-12" for="tel">電話:{{buyuser.tel}}</label>
+      </div>
+      <div class="row1 col-md-12">
+        <label class="col-md-12" for="mail">電子信箱:{{buyuser.mail}}</label>
+      </div>
+      <div class="row1 col-md-12">
+        <label class="col-md-12" for="adress">地址:{{buyuser.adress}}</label>
+      </div> 
+    </div>
+    
+    <div class="col-md-8"><h3>購買資訊</h3></div>
+    <div class="shoplist col-md-8">
+      <h5>購物清單</h5>
+      <div class="itemlist">
+        <ul class="" v-for="(newlist,index) in ShopCar">
+          <li>
+            <div class="col-md-2"><img :src="newlist.photo" alt="" style="max-width: 50px;"></div>
+            <div class="col-md-4">{{newlist.itemname}}</div>
+            <div class="col-md-2" style="color: #bb4935;">${{newlist.itemprice}}</div>
+            <div class="col-md-2">{{newlist.num}}/個</div>
+          </li>
+          <hr>
+        </ul>
+        <h4 class="cost">總金額：${{cost}}</h4>
+        <hr>
+      </div>
+    </div>
+    <div class="pay-check col-md-12" to="/check"><input type="button" value="確認結帳" class="pay-btn btn btn-success" @click="paycheck()"></div>
+  </div>

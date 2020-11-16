@@ -1,0 +1,16 @@
+<div class="main">
+    <div class="container" v-if="!Administrator">
+        <div class="tittle"><h3>立即登入</h3></div>
+        <div class="sing-from">
+            <input type="text" name="username" id="username" placeholder="請輸入帳號">
+            <input type="password" name="password" id="password" placeholder="請輸入密碼">
+        </div>
+
+        <div class="btn-sing"><button @click="LogIn()">登入</button></div>
+
+    </div>
+
+    <div class="sing-in" v-if="Administrator">
+        <h3>{{this.NowLoginUser.UserAccount}}已登入中</h3>
+    </div>
+</div>

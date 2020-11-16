@@ -1,0 +1,42 @@
+<div class="contain row">
+  <div class="personal-information col-md-6">
+    <h3>訂單資料</h3>
+    <div class="row1 col-md-12">
+      <label class="col-md-12" for="name" >姓名</label>
+      <input type="text" class="namebox col-md-12">
+    </div>
+    <div class="row1 col-md-12">
+      <label class="col-md-12" for="tel">電話</label>
+      <input type="text" class="telbox col-md-12">
+    </div>
+    <div class="row1 col-md-12">
+      <label class="col-md-12" for="mail">電子信箱</label>
+      <input type="email" class="mailbox col-md-12">
+    </div>
+    <div class="row1 col-md-12">
+      <label class="col-md-12" for="adress">地址</label>
+      <input type="text" class="adressbox col-md-12">
+    </div>
+    <div class="row1 col-md-12">
+      <div class="pay-check col-md-12"><input type="button" value="結帳" class="pay-btn" @click="sub_btn()"></div>
+    </div>   
+  </div>
+
+  <div class="shoplist col-md-6">
+    <h3>購物清單</h3>
+    <div class="itemlist">
+      <ul class="col-md-12" v-for="(newlist,index) in ShopCar">
+        <li>
+          <div class="col-md-2"><img :src="newlist.photo" alt="" style="max-width: 50px;"></div>
+          <div class="col-md-4">{{newlist.itemname}}</div>
+          <div class="col-md-2" style="color: #bb4935;">${{newlist.itemprice}}</div>
+          <div class="col-md-2">{{newlist.num}}/個</div>
+          <div class="btn" @click="deleteincar(newlist)">x</div>
+        </li>
+        <hr>
+      </ul>
+      <div class="giftcheck"><input type="checkbox" name="" id="discount" @click="GiftCheck()"><span>{{PickGift.prizename}}</span></div>
+      <h4 class="cost">總金額：${{cost}}</h4>
+    </div>
+  </div>
+</div>

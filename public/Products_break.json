@@ -1,0 +1,10 @@
+[   
+  {
+    "id": 1,
+    "itemclass": "麵包",
+    "itemname": "麵包",
+    "itemnar": "",
+    "itemprice": 50,
+    "photo": "/static/bake.png"
+  }
+]

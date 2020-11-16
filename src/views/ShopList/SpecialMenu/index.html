@@ -1,0 +1,20 @@
+<div>
+    <div class="allmenu-list row">
+        <div class="menu col-md-4" v-for="(item,index) in Products_Special">
+            <div class="menucontain">
+                <img :src="item.photo" alt="">
+                <div class="shop-lable">
+                    <p>{{item.itemclass}}</p>
+                </div>
+                <h4 class="item-name">{{item.itemname}}</h4>
+                <p id="shop-list-narrative"> {{item.itemnar}} </p>
+                <div class="shop-list-footer">
+                    <p>定價NT${{item.itemprice}}</p>
+                    <button class="col-md-8" @click="AddToCar(index,item.id)">購買</button>
+                    <!-- <input type="button" value="購買" @click='AddToCar(index,item.id)'> -->
+                    <!-- <a href="#" @click='AddToCar(index,item.id)'>加入購物車</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

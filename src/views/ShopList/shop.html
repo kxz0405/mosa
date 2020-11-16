@@ -1,0 +1,67 @@
+<div class="shop">
+    <div class="cur-img">
+      <img src="../../../public/static/0418-arome-1-www.jetsoclub.com.jpg" alt />
+    </div>
+
+    <div class="shop-block mt-4">
+
+      <div class="shop-content row">
+
+        <div class="shop-list col-md-3">
+          <router-link to="/ShopComponents/SpecialMenu">特色蛋糕</router-link>
+          <router-link to="/ShopComponents/NewyearMenu">賀年糕點</router-link>
+          <router-link to="/ShopComponents/BreakMenu">麵包</router-link>
+        </div>
+        <div class="listmenu col-md-9">
+          <router-view></router-view>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="buymenu">
+      <img src="../../../public/static/shopcar.png" alt="" @click="showlist()">
+      <span class="incar-length"> {{incarle}} </span>
+      <div class="shop-car-list">
+          <h6>已選擇的商品</h6>
+          <hr style="border: 1px solid rgb(138, 138, 138); margin: 5px;">
+          <div>
+              <table class="shop-car-table" cellspacing="3">
+                  <thead style="font-size: 16px; color: rgb(138, 138, 138);">
+                      <td></td>
+                      <td>商品名稱</td>
+                      <td>價格</td>
+                      <td>數量</td>
+                  </thead>
+                  <tbody v-for="(newlist,index) in incar" style="font-size: 16px; ">
+                      <tr>
+                          <td><img :src="newlist.photo" alt="" style="max-width: 50px;"></td>
+                          <td> {{newlist.itemname}} </td>
+                          <td> ${{newlist.itemprice}} </td>
+                          <td> {{newlist.num}} </td>
+                          <td>
+                              <div class="btn" @click="addnum(index)">+</div>
+                          </td>
+                          <td>
+                              <div class="btn" @click="subnum(index)">-</div>
+                          </td>
+                          <td>
+                              <div class="btn" @click="deleteincar(newlist)">x</div>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <hr>
+          <div class="gift-check">
+            <input type="checkbox" name="" id="discount" @click="GiftCheck()"><p>{{PickGift.prizename}}</p>
+          </div>
+          <h4 class="cost">總金額：${{cost}}</h4>
+          <div class="btn-checkout">
+              <router-link to="/pay" class="btnpay">結帳</router-link>
+              <!-- <a class="btnpay" href="../ListControl/ListControl.html">結帳</a> -->
+          </div>
+      </div>
+    </div>
+
+  </div>

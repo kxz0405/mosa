@@ -1,0 +1,90 @@
+.contact{
+    .ActivityTit{
+        text-align: center;
+        padding: 20px;
+        h2{
+            color: rgb(155, 155, 155);
+        }
+    }
+    .Dottedline{
+        margin: auto;
+        hr{
+            margin: auto;
+            border: 1px dashed rgb(155, 155, 155);
+            opacity: 0.5;
+        }
+        // width: 700px;
+        
+    }
+    
+    .ActivityPick{
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgba(126, 58, 58, 0.836);
+        border-radius:10px;
+        font-family: Microsoft JhengHei;
+        padding: 20px;
+        div{
+            max-width: 100%;
+            h2{
+                color: rgb(229, 236, 162);
+            }
+            p{
+                color: rgb(246, 253, 181);
+                line-height: 2rem;
+            }
+            img{
+                max-width: 200px;
+                animation: GiftAnimation 1s ease-in-out 0s infinite normal;
+                cursor: pointer;
+            }
+            .imgclick{
+                animation: GiftClick 1s ease-in-out 0s normal;
+            }
+            .WindowPrize{
+                margin: auto;
+                height: 60px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:360px){
+    .ActivityPick,.Dottedline{
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .ActivityPick,.Dottedline{
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ActivityPick,.Dottedline{
+        max-width: 700px;
+    }
+}
+
+
+
+//ActivityPick-animation
+@keyframes GiftAnimation{
+    0% {transform:rotate(0deg);}
+    20%{transform:rotate(30deg);}
+    40%{transform:rotate(10deg);}
+    60%{transform:rotate(-30deg);}
+    80%{transform:rotate(-10deg);}
+    100%{transform:rotate(0deg);}
+}
+//ActivityPick-ClickAnimation
+@keyframes GiftClick{
+    0%{filter:brightness(100%);}
+    30%{filter:brightness(50%);}
+    50%{filter:brightness(0%);}
+    80%{filter:brightness(60%);}
+    100%{filter:brightness(100%);}
+}

@@ -1,0 +1,61 @@
+
+@font-face{
+    src: url(./font/Mamelon.otf);
+    font-family: mome;
+}
+
+.head{
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    hr{
+        width: 200px;
+        height: 0.1px;
+    }
+    .nav{
+        display: flex;
+        ul{
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            align-items: flex-end;
+            li{
+                font-size: 16px;
+                font-weight: 1000;
+                color: #9c857a;
+                text-decoration: none;
+            }
+            li:hover{
+                color: #c0a89c;
+            }
+        }
+        .logo{
+            width: 300px;
+            text-align: center;
+            color: brown;
+            // font-family: mome;
+            font-weight: 400 !important;
+            color: #6d442b;
+            p{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+@function wrap-h($footer:1px){
+    @return 100vh-$footer;
+}
+.wrap{
+    min-height: wrap-h(15.6);
+}
+
+.footer{
+    background-color:#7a5743;
+    text-align: center;
+    height: 25px;
+    position: relative;
+    bottom: -2px;
+}

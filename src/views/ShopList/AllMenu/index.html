@@ -1,0 +1,16 @@
+<div>
+    <div class="allmenu-list">
+        <div class="menu" v-for="(item,index) in Products_All">
+            <img :src="item.photo" alt="">
+            <div class="shop-lable">
+                <p>{{item.itemclass}}</p>
+            </div>
+            <h4 class="item-name">{{item.itemname}}</h4>
+            <p id="shop-list-narrative"> {{item.itemnar}} </p>
+            <div class="shop-list-footer">
+                <p>${{item.itemprice}}</p>
+                <i class="fa fa-gift" aria-hidden="true" @click='addTocar(index,item.id)'></i>
+            </div>
+        </div>
+    </div>
+</div>

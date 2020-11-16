@@ -1,0 +1,23 @@
+<div class="contact">
+    <div class="ActivityTit">
+        <h2>優惠活動</h2>
+    </div>
+    <div class="Dottedline col-md-8"><hr></div>
+    
+    <div class="ActivityPick col-md-8">
+        <div>
+            <h2>開幕慶祝</h2>
+            <p>點選禮物盒，可隨機獲得折價券一張</p>
+            <img class="gift" src="../../../public/static/unn.png" alt="" v-if='!Havegift' @click="Giftclick">
+            <img class="gift" src="../../../public/static/unn.png" alt="" v-else>
+            <div class="WindowPrize">
+                <div class="Prize">
+                    <h3>恭喜獲得</h3>
+                    <span>{{PickGift.prizename}}</span>
+                </div>   
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
