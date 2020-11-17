@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "prizename":"九折券",
+        "discount":0.9
+    },
+    {
+        "id":2,
+        "prizename":"八折券",
+        "discount":0.8
+    },
+    {
+        "id":3,
+        "prizename":"九點五折券",
+        "discount":0.95
+    },
+    {
+        "id":4,
+        "prizename":"八點五折券",
+        "discount":0.85
+    },
+    {
+        "id":5,
+        "prizename":"五折券",
+        "discount":0.5
+    },
+    {
+        "id":6,
+        "prizename":"三折券",
+        "discount":0.3
+    },
+    {
+        "id":7,
+        "prizename":"一折券",
+        "discount":0.1
+    }
+
+]
