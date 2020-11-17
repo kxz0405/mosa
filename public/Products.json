@@ -5,7 +5,7 @@
     "itemname": "白桃花見",
     "itemprice": 320,
     "itemnar": "粉嫩的桃味果凍上鋪滿豐碩圓潤的白桃，伴以晶瑩剔透的寒天，締造層次豐富、口感細膩之享受。",
-    "photo": "/static/c23.png"
+    "photo": "@/../static/c23.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "itemname": "巨峰甘王",
     "itemnar": "「日本の巨峰甘王」蛋糕面層鋪滿顆顆豐盈飽滿的巨峰提子果凍，一嚐頓時果汁四溢，帶來甜美多汁口感。",
     "itemprice": 239,
-    "photo": "/static/Cutout2.png"
+    "photo": "@/../static/Cutout2.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "itemname": "足球情熱",
     "itemnar": "綿密的綠茶蛋糕面層放置著半立體足球朱古力，以士多啤梨，芒果，奇異果，藍莓包圍著。",
     "itemprice": 199,
-    "photo": "/static/football-fever.png"
+    "photo": "@/../static/football-fever.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "itemname": "蜜瓜之甘熟",
     "itemnar": "加入產自日本之蜜瓜果肉，配上有蜜瓜粒果、白朱古力脆層及蜜瓜白朱古力慕絲的豐富夾層。",
     "itemprice": 239,
-    "photo": "/static/melon.png"
+    "photo": "@/../static/melon.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "itemname": "草莓森林",
     "itemnar": "面層鋪滿士多啤梨配以朱古力蛋糕，內有黑森林啫喱，啖啖濃郁朱古力味。",
     "itemprice": 219,
-    "photo": "/static/blackcake.png"
+    "photo": "@/../static/blackcake.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "itemname": "牛乳芝士蛋糕切餅",
     "itemnar": "北海道牛乳芝士蛋糕切餅。",
     "itemprice": 21,
-    "photo": "/static/sweet1.jpg"
+    "photo": "@/../static/sweet1.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "itemname": "北海道牛乳芒果卷 ",
     "itemnar": "北海道牛乳芒果卷 。",
     "itemprice": 20,
-    "photo": "/static/sweet2.jpg"
+    "photo": "@/../static/sweet2.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "itemname": "鮮果吉士撻",
     "itemnar": "鮮果吉士撻。",
     "itemprice": 20,
-    "photo": "/static/sweet3.jpg"
+    "photo": "@/../static/sweet3.jpg"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "itemname": "鬆鬆曲奇禮盒4盒",
     "itemnar": "選用澳洲及紐西蘭牛油、低溫烘焙，保留原材料的香味。酥鬆香滑，入口即溶。",
     "itemprice": 240,
-    "photo": "/static/cookie1.png"
+    "photo": "@/../static/cookie1.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "itemname": "麵包",
     "itemnar": "「和熟‧車打金文畢芝士包」最適合放入微波爐加熱後享用，半融化的芝士配上柔潤麵包，更添濃郁美味。4個裝更適合與家人朋友分享。",
     "itemprice": 21,
-    "photo": "/static/bake.png"
+    "photo": "@/../static/bake.png"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "itemname": "和熟．芝士蜜糖碎肉包",
     "itemnar": "麵包內蘊藏着香濃車打芝士及粒粒蜜糖香蒜腸，鹹香惹味，配上面層的芝士醬，每一口都盡嚐柔潤濃郁「芝」味，帶來層次豐富的極上享受。",
     "itemprice": 10,
-    "photo": "/static/chessbake.png"
+    "photo": "@/../static/chessbake.png"
   },
   {
     "id": 10,
@@ -93,6 +93,6 @@
     "itemname": "和熟．朱古力合桃包",
     "itemnar": "4個裝的「和熟．朱古力合桃包」包裝輕便，營養豐富，加熱後配上牛乳一同享用，醇厚的朱古力滋味在舌尖上瞬間綻放。",
     "itemprice": 21,
-    "photo": "/static/chcake.png"
+    "photo": "@/../static/chcake.png"
   }
 ]

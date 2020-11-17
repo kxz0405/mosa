@@ -81,7 +81,7 @@ export default new Vuex.Store({
 
   actions: {
     Getlist(context){
-      return axios.get('./Products.json').then(res=>{   
+      return axios.get('@/../Products.json').then(res=>{   
         context.commit('Setlist',res.data)
       })
     },

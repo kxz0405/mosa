@@ -44,21 +44,18 @@
                     align-items: center;
                     display: flex;
                     justify-content: center;
-                    // max-width: 160px;
                     margin: auto;
                     border: 0px;
                     border-radius: 20px;
                     background-color: #7a5743;
                     color: rgb(255, 255, 255);
+                    outline: none;
                 }
-                input:hover{
+                button:hover{
                     background-color: #641f1f;
                 }
-                input:active{
+                button:active{
                     color: rgb(165, 165, 165);
-                }
-                input:focus{
-                    outline: none;
                 }
             }
         }
